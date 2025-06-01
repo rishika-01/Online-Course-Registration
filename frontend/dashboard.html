@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Courses | Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+</head>
+<body>
+  <h1>Welcome, <span id="studentName"></span></h1>
+  <h2>USN: <span id="studentUsn"></span></h2>
+  <h3>Semester: 4</h3>
+
+  <h4>Available Courses</h4>
+  <table border="1">
+    <thead>
+      <tr>
+        <th>Code</th>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Faculty</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody id="courseTable"></tbody>
+  </table>
+
+  <h5>My Enrolled Courses</h5>
+<table border="1">
+  <thead>
+    <tr>
+      <th>Code</th>
+      <th>Name</th>
+      <th>Faculty</th>
+    </tr>
+  </thead>
+  <tbody id="enrolledCoursesTable"></tbody>
+</table>
+
+
+  <p id="message" style="color: rgb(28, 209, 28);"></p>
+
+  <script src="script.js"></script>
+
+  <div id="downloadButtonContainer">
+  <button onclick="downloadEnrolledCourses()">Download Enrolled Courses</button>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+</body>
+</html>

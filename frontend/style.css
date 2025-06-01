@@ -1,0 +1,124 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #000000, #16115d, #07054b);
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  text-align: center;
+}
+
+h1, h2, h3 {
+  margin: 10px 0;
+}
+
+h4, h5 {
+  margin: 5px 0;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Segoe UI', sans-serif;
+  color: #fff280; 
+}
+
+form, table {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin: 15px auto;
+  border-radius: 10px;
+  max-width: 1700px;
+  width: 100%;
+}
+
+input[type="text"], input[type="password"] {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  width: 200px;
+  margin: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #ffffff;
+  color: #11014c;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+table {
+  width: 90%;
+  margin: 10px auto;
+  border-collapse: collapse;
+  font-size: 16px;
+}
+
+th, td {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 12px;
+}
+
+th {
+  background-color: rgba(0, 0, 0, 0.4);
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.logo {
+  width: 120px; /* adjust size as needed */
+  height: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#message {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  table {
+    font-size: 14px;
+  }
+  th, td {
+    padding: 10px;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#enrolledCoursesTable {
+  scroll-margin-top: 50px;
+}
+
+#downloadButtonContainer {
+  margin-top: 20px;
+}
+
+#downloadButtonContainer button {
+  margin-top: 5px;
+  background-color: #f8f9fa;
+  color: #11014c;
+  /*border: 2px solid #6c00a0;*/
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+#downloadButtonContainer button:hover {
+  background-color: #6c00a0;
+  color: white;
+}

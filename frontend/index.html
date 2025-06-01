@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Course Registration Portal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="login-container">
+    <img src="logo.png" alt="College Logo" class="logo" />
+    <h1>COURSE REGISTRATION PORTAL</h1>
+    <h2>STUDENT SIGN IN</h2>
+    <form id="loginForm">
+      <div class="input-row">
+        <label for="usn">USN:</label>
+        <input type="text" id="usn" placeholder="Enter USN" required />
+      </div>
+      <div class="input-row">
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder="Enter Password" required />
+      </div>
+      <button type="submit">Login</button>
+    </form>
+    <p id="message" style="color: red;"></p>
+  </div>
+
+  <script src="login.js"></script>
+</body>
+</html>

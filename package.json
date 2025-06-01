@@ -1,0 +1,25 @@
+{
+  "name": "online-course-enrollment",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd backend && node server.js",
+    "client": "cd frontend && npx serve"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "jspdf": "^3.0.1",
+    "jspdf-autotable": "^5.0.2",
+    "mysql2": "^3.14.1",
+    "pdfkit": "^0.17.1"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
